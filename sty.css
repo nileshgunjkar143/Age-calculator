@@ -1,0 +1,82 @@
+*{
+    background-color: rgb(171, 238, 238);
+}
+.h1{
+    border: none;
+    text-align: center;
+}
+#tab{
+    width: 500px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px dashed rgb(182, 76, 76);
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgb(228, 143, 143);   
+}
+#cl{
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+tr{
+    text-align: center;
+}
+td{
+    text-align: center;
+}
+.cal{
+    height: 50px;
+    width: 4rem;
+    font-size:17px;
+    border:none;
+    margin: 5px;
+    padding: 1px;
+    color: rgb(97, 36, 8);
+}
+#button{
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: large;
+    margin: 10px;
+    padding: 10px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYUwpeBoZM7vSYLkm5P8tRL_n8LVGnz3Fo8A&usqp=CAU);
+}
+#reset{
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size:15px ;
+    padding: 7px;
+    background-image: url(https://wallpapercave.com/wp/wp2704824.jpg);
+}
+
+.text{
+    text-align: center;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1.5rem;
+    color: rgb(26, 48, 49);
+}
+#last{
+    text-align: center;
+    margin: 30px;   
+}
+#result{
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px;
+    border: 2px solid;
+    border-color: rgb(67, 89, 121);
+    border-radius: 20px;
+    width: 20rem;
+    text-align: left;
+}
+#rev{
+    background-color: beige;
+}
