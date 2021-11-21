@@ -17,21 +17,27 @@
         if(monthSathi>=0){
           if(daySathi>=0){
             let a = "Your Age is " + yearSathi + " Years " + monthSathi + " Months " + daySathi + " Days ";
-            console.log(a);
-            document.getElementById("result").innerHTML = a;
+            if(yearSathi>=0 && monthSathi>=0 && daySathi>=0){
+              document.getElementById("result").innerHTML = a;
+            }
+            else document.getElementById("result").innerHTML="Date of birth needs to be earlier than the age at date";
           }
           else{
             let a = "Your Age is " + yearSathi + " Years " + (monthSathi-1) + " Months " + eDays + " Days ";
-            console.log(a);
-            document.getElementById("result").innerHTML = a;
+            if(yearSathi>=0 && monthSathi>=0 && daySathi>=0){
+              document.getElementById("result").innerHTML = a;
+            }
+            else document.getElementById("result").innerHTML="Date of birth needs to be earlier than the age at date";
           }
         }
         else{
           let a = "Your Age is " + (yearSathi-1) + " Years " + eMonths + " Months " + daySathi + " Days ";
-            console.log(a);
+          if(yearSathi>=0 && monthSathi>=0 && daySathi>=0){
             document.getElementById("result").innerHTML = a;
+          }
+          else document.getElementById("result").innerHTML="Date of birth needs to be earlier than the age at date";
         }
-    }else document.getElementById("result").innerHTML="your dob is grater than todays age";
+    }else document.getElementById("result").innerHTML="Date of birth needs to be earlier than the age at date";
     
   }
   
