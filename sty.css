@@ -1,85 +1,109 @@
-*{
-    background-color: rgb(171, 238, 238);
-}
-.h1{
-    border: none;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #262929;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    }
+    
+    * {
+    box-sizing: border-box;
+    }
+    
+    .container{
+    width:520px;
+    height: auto;
+    margin: 100px auto;
+    background-color: rgb(153, 134, 134);
+    border-radius: 5px;
+    }
+    
+    .base{
+    width: 100%;
+    text-align: center; 
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    float: none;
+    }
+    
+    .block{
+    width: 135px;
+    padding: 5px 20px;
+    margin-left: 10px;
+    display: inline-block;
+    }
+    
+    .base h4{
+    font-size: 26px;
     text-align: center;
-}
-#tab{
-    width: 500px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px dashed rgb(182, 76, 76);
-    border-radius: 10px;
-    padding: 50px;
-    background-color: rgb(228, 143, 143);   
-}
-#cl{
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-
-}
-tr{
-    text-align: center;
-}
-td{
-    text-align: center;
-}
-.cal{
-    height: 50px;
-    width: 4rem;
-    font-size:17px;
-    border:none;
-    margin: 5px;
-    padding: 1px;
-    color: rgb(97, 36, 8);
-}
-#button{
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: large;
-    margin: 10px;
-    padding: 10px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYUwpeBoZM7vSYLkm5P8tRL_n8LVGnz3Fo8A&usqp=CAU);
-}
-#reset{
-    border: 1px solid black;
-    border-radius: 8px;
-    font-size:15px ;
-    padding: 7px;
-    background-image: url(https://wallpapercave.com/wp/wp2704824.jpg);
-}
-
-.text{
-    text-align: center;
-    font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 1.5rem;
-    color: rgb(26, 48, 49);
-}
-#last{
-    text-align: center;
-    margin: 30px;   
-}
-#result{
-    margin: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px;
-    border: 2px solid;
-    border-color: rgb(67, 89, 121);
-    border-radius: 20px;
-    width: 20rem;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-top: 0px;
+    box-shadow: 0px 2px #bababa;
+    background: #0a0a0a;
+    font-size: 34px;
+    color: #acacfb;
+    }
+    
+    .title{
+    font-size: 20px;
     text-align: left;
-}
-#rev{
-    background-color: beige;
-}
-p{
-    font-size: 21px;
-}
+    font-family: sans-serif;
+    font-weight: normal;
+    line-height: 0.5;
+    letter-spacing: 0.5px;
+    word-spacing: 2.7px;
+    color: #000000;
+    }
+    
+    input[type=text] {
+    width: 140px;
+    margin: auto;
+    outline: none;
+    min-height: 50px;
+    border: 2px solid #1073d0;
+    padding: 12px;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    color: #1073d0;
+    font-size: 17px;
+    }
+    
+    input[type=text]:focus{
+    background-color: #ffffff;
+    border: 2px solid orange;
+    outline: none;
+    }
+    
+    input[type=button]{
+    width: 150px;
+    margin-top: 40px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background-color: #0b0c0c;
+    color: #ff8e8e;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 16px;
+    }
+    input[type=button]:hover{
+    background-color: #003669;
+    }
+    
+    #age{
+    display: block;
+    margin: 10px;
+    margin-top: 35px;
+    padding: 10px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    font-family: verdana;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 1.5;
+    word-spacing: 2.7px;
+    color: navy;
+    }

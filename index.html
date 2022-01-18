@@ -1,128 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Age Calculator</title>
-    <link rel="stylesheet" href="sty.css"/>
+	<title>Age Calculator</title>
+  <link rel="stylesheet" href="sty.css">
 </head>
 <body>
-    <h1 class="h1">Age Calculator</h1>
-    
-    <table id="tab">
-        <tr>
-            <td><div class="text">Date of birth:</div></td>
-            <td><select class="cal" id="month">
-                <option value="1">Jan</option>
-                <option value="2">Feb</option>
-                <option value="3">Mar</option>
-                <option value="4">Apr</option>
-                <option value="5">May</option>
-                <option value="6">Jun</option>
-                <option value="7">July</option>
-                <option value="8">Aug</option>
-                <option value="9">Seb</option>
-                <option value="10">Oct</option>
-                <option value="11">Nov</option>
-                <option value="12">Dec</option>
-            </select></td>
-            <td><select class="cal" id="date" >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-            </select>
-            </td>
-            <td><input type="text"id="year" class="cal" value="2021"></td>
-        </tr>
-        <tr>
-            <td><div class="text">Age at the date of:</div></td>
-            <td><select class="cal" id="todayMonth">
-                <option value="1">Jan</option>
-                <option value="2">Feb</option>
-                <option value="3">Mar</option>
-                <option value="4">Apr</option>
-                <option value="5">May</option>
-                <option value="6">Jun</option>
-                <option value="7">July</option>
-                <option value="8">Aug</option>
-                <option value="9">Seb</option>
-                <option value="10">Oct</option>
-                <option value="11">Nov</option>
-                <option value="12">Dec</option>
-            </select></td>
-            <td><select class="cal" id="todayDate" >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-            </select>
-            </td>
-            <td><input type="text"id="todayYear" class="cal" value="2021"></td>
-        </tr>
-        </table>
-    <table id="cl"><td><div ><input type="button" value="Calculate" id="button" onclick="myFunction()">
-        <input type="button" value="Reset" id="reset" onclick="rest()"></div></td>
-</table>
-   
-    <div id="last">
-        <div class="text" style="color: black; font-size: 1.5rem;">Age result</div>
-        <p id="result"></p>
-        </div>
+
+<div class="container">
+  <form>
+  	<div class="base">
+  		<div class="enter">
+  		<h4>Age Calculator</h4>
+  	</div>
+  <div class="block">
+  	<p class="title">Date</p>
+  	<input type="text" name="date" id="date" placeholder="dd" required="required" minlength="1" maxlength="2" />
+  </div>
+  <div class="block">
+  	<p class="title">Month</p>
+    <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1" maxlength="2" />
+  </div>
+  <div class="block">
+  	<p class="title">Year</p>
+    <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="4" maxlength="4" />
+  </div>
+  </div>
+  <div class="base">
+  	<div class="enter">
+    <input type="button" name="submit" value="Submit" onclick="age()" />
+    <input type="button" value="Reset"  onclick="rest()">
     </div>
-    
-    <script src="code.js"></script>
-</body>
-</html>
+  </div>
+    <div id="age"></div>
+  </form>
+</div>
+<script src="code.js"></script>
+<body>
+<html>

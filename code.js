@@ -1,46 +1,28 @@
-  let month = document.getElementById("month");
-  let date = document.getElementById("date");
-  let year = document.getElementById("year");
-  let todayMonth = document.getElementById("todayMonth");
-  let todayDate = document.getElementById("todayDate");
-  let todayYear = document.getElementById("todayYear");
+function age() {
+  var d1 = document.getElementById('date').value;
+  var m1 = document.getElementById('month').value;
+  var y1 = document.getElementById('year').value;
 
-  
-  function myFunction () {
-     
-    let yearSathi = todayYear.value-year.value;
-    let monthSathi = todayMonth.value-month.value;
-    let daySathi = todayDate.value - date.value;
-    let eDays = 31 + daySathi;
-    let eMonths = 12 + monthSathi;
-    if(yearSathi>=0){
-        if(monthSathi>=0){
-          if(daySathi>=0){
-            let a = "Your Age is \n " + yearSathi + " Years " + monthSathi + " Months " + daySathi + " Days ";
-            if(yearSathi>=0 && monthSathi>=0){
-              document.getElementById("result").innerHTML = a;
-            }
-            else document.getElementById("result").innerHTML="Date of birth needs to be earlier than the age at date";
-          }
-          else{
-            let a = "Your Age is \n " + yearSathi + " Years " + (monthSathi-1) + " Months " + eDays + " Days ";
-            if(yearSathi>=0){
-              document.getElementById("result").innerHTML = a;
-            }
-            else document.getElementById("result").innerHTML="Date of birth needs to be earlier than the age at date";
-          }
-        }
-        else{
-          let a = "Your Age is \n " + (yearSathi-1) + " Years " + eMonths + " Months " + daySathi + " Days ";
-          if(yearSathi>=0){
-            document.getElementById("result").innerHTML = a;
-          }
-          else document.getElementById("result").innerHTML="Date of birth needs to be earlier than the age at date";
-        }
-    }else document.getElementById("result").innerHTML="Date of birth needs to be earlier than the age at date";
-    
+  var date = new Date();
+  var d2 = date.getDate();
+  var m2 = 1 + date.getMonth();
+  var y2 = date.getFullYear();
+  var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+  if(d1 > d2){
+      d2 = d2 + month[m2 - 1];
+      m2 = m2 - 1;
   }
-  
-  function rest() {
-    document.getElementById("result").innerHTML ="";
+  if(m1 > m2){
+      m2 = m2 + 12;
+      y2 = y2 - 1;
   }
+  var d = d2 - d1;
+  var m = m2 - m1;
+  var y = y2 - y1;
+
+  document.getElementById('age').innerHTML = 'Your Age is '+y+' Years '+m+' Months '+d+' Days';
+}
+function rest() {
+    document.getElementById('age').innerHTML = ' ';
+}
