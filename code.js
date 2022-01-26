@@ -21,7 +21,20 @@ function age() {
   var m = m2 - m1;
   var y = y2 - y1;
 
-  document.getElementById('age').innerHTML = 'Your Age is '+y+' Years '+m+' Months '+d+' Days';
+   ye = y * 8760;
+   mo = m * 730;
+   da = d * 24;
+   var t = ye+mo+da;
+   var m = t*60;
+   let s = m*60;
+
+  document.getElementById('y').innerHTML = 'Your Age is '+y+' Years ' ;
+  document.getElementById('mon').innerHTML = m+' Months ' ;
+  document.getElementById('d').innerHTML = d+' Days ' ;
+  document.getElementById('h').innerHTML =  t + ' Hours '  ;
+  document.getElementById('m').innerHTML =  m + ' Minutes ' ;
+  document.getElementById('s').innerHTML =  s + ' Seconds ' ;
+
 }
 function rest() {
     document.getElementById('age').innerHTML = ' ';

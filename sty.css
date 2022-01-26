@@ -93,17 +93,87 @@ body{
     background-color: #003669;
     }
     
-    #age{
+    #y{
     display: block;
     margin: 10px;
     margin-top: 35px;
     padding: 10px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     overflow: hidden;
     font-family: verdana;
     font-size: 23px;
     font-weight: normal;
     line-height: 1.5;
-    word-spacing: 2.7px;
+    word-spacing: 2.7px;    
     color: navy;
     }
+    #mon{
+        display: block;
+        margin: 10px;
+        margin-top: 5px;
+        padding: 10px;
+        padding-bottom: 20px;
+        overflow: hidden;
+        font-family: verdana;
+        font-size: 23px;
+        font-weight: normal;
+        line-height: 1.5;
+        word-spacing: 2.7px;
+        color: navy;
+        }
+        #d{
+            display: block;
+            margin: 10px;
+            margin-top: 5px;
+            padding: 10px;
+            padding-bottom: 20px;
+            overflow: hidden;
+            font-family: verdana;
+            font-size: 23px;
+            font-weight: normal;
+            line-height: 1.5;
+            word-spacing: 2.7px;
+            color: navy;
+            }
+            #h{
+                display: block;
+                margin: 10px;
+                margin-top: 5px;
+                padding: 10px;
+                padding-bottom: 20px;
+                overflow: hidden;
+                font-family: verdana;
+                font-size: 23px;
+                font-weight: normal;
+                line-height: 1.5;
+                word-spacing: 2.7px;
+                color: navy;
+                }
+                #m{
+                    display: block;
+                    margin: 10px;
+                    margin-top: 5px;
+                    padding: 10px;
+                    padding-bottom: 20px;
+                    overflow: hidden;
+                    font-family: verdana;
+                    font-size: 23px;
+                    font-weight: normal;
+                    line-height: 1.5;
+                    word-spacing: 2.7px;
+                    color: navy;
+                    }
+                    #s{
+                        display: block;
+                        margin: 10px;
+                        margin-top: 5px;
+                        padding: 10px;
+                        padding-bottom: 20px;
+                        overflow: hidden;
+                        font-family: verdana;
+                        font-size: 23px;
+                        font-weight: normal;
+                        line-height: 1.5;
+                        word-spacing: 2.7px;
+                        color: navy;
+                        }
