@@ -63,7 +63,7 @@ function ageCalculator() {
         " Years,  " + Months + " Months,  and " + Days + " Days";
     }
     else{
-        document.getElementById("result").innerHTML = "Date of birth needs to be earlier than the age at date.";
+        document.getElementById("result").innerHTML = "Date of birth needs to be earlier than the Current Date.";
     }
  
 }
